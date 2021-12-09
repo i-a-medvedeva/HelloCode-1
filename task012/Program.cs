@@ -11,3 +11,5 @@ int A = num/100;
     Console.Write(Y);
 
 
+
+
