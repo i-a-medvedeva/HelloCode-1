@@ -4,7 +4,7 @@ Console.WriteLine(m);
 int n = new Random().Next(1, 10);
 Console.WriteLine(n);
 int[,] Array = new int [m, n];
-//int[,] Array = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 } };
+//int[,] Array = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 } }; //можно и так массив задавать, уже со значениями
 
 
 void printDoubleArray(int[,] Array)
@@ -21,6 +21,5 @@ void printDoubleArray(int[,] Array)
 }
 
 printDoubleArray(Array);
-// Console.WriteLine(); //отступ на новую строку
-// printDoubleArray(Array);
+
 
