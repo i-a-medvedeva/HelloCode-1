@@ -1,12 +1,14 @@
-﻿int A = 5;
-int B = 25;
+﻿// 2. Даны два числа. Показать большее и меньшее число
+
+int A = 3;
+int B = 7;
 double n = 0.5;
 
-if (Math.Pow(B,n) == A)
+if (A>B)
 {
-    Console.WriteLine("Является!");
+    Console.WriteLine(A+" больше "+B);
 }
 else
 {
-    Console.Write("Не является");
+    Console.WriteLine(A+" меньше "+B);
 }

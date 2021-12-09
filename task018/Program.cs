@@ -1,4 +1,6 @@
-﻿//Console.WriteLine("Введите true или false ");
+﻿//18. Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
+
+//Console.WriteLine("Введите true или false ");
 //bool numX = bool.Parse(Console.ReadLine());
 //Console.WriteLine(numX);
 Console.WriteLine("Введите первое число true или false :");
