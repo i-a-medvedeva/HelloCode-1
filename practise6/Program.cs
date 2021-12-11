@@ -50,29 +50,52 @@
 
 // Дан целочисленный двумерный массив А = {{-1, 2, -3}, {4, -5, 3}}. Напечатать индексы его отрицательных элементов.
 
-int[,] MyАrray = {{-1,2,-3},{4,-5,3}};
+// int[,] MyАrray = {{-1,2,-3},{4,-5,3}};
 
-void printDoubleArray(int[,] A)
-{
-    for (int row = 0; row < A.GetLength(0); row++)
-    {
-        for (int column = 0; column < A.GetLength(1); column++)
-        {
-            if (A[row,column] < 0) 
-            {
-                Console.WriteLine("Индексы элемента: "+ row +""+ column +"");
-                // Console.Write($"{row}"); 
-                // Console.Write ($"{column}");
-                // Console.Write (" ");
-            }
-            //Console.Write(A[row, column] + " ");
-        }
-        //Console.WriteLine(); // отступ на новую строку
-    }
-}
+// void printDoubleArray(int[,] A)
+// {
+//     for (int row = 0; row < A.GetLength(0); row++)
+//     {
+//         for (int column = 0; column < A.GetLength(1); column++)
+//         {
+//             if (A[row,column] < 0) 
+//             {
+//                 Console.WriteLine("Индексы элемента: "+ row +""+ column +"");
+//                 // Console.Write($"{row}"); 
+//                 // Console.Write ($"{column}");
+//                 // Console.Write (" ");
+//             }
+//             //Console.Write(A[row, column] + " ");
+//         }
+//         //Console.WriteLine(); // отступ на новую строку
+//     }
+// }
 
-printDoubleArray(MyАrray);
+// printDoubleArray(MyАrray);
 
 // Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое), 
 //и с помощью цикла(-ов) заполнить его диагональные элементы единицами (можно только одну из диагоналей, если обе сложно).
+
+int m = new Random().Next(1, 10); // 1 2 3 4 ... 9
+Console.WriteLine(m);
+int[,] Square = new int [m, m];
+
+void print(int[,] array)
+{
+    for (int row = 0; row < array.GetLength(0); row++)
+    {
+        for (int column = 0; column < array.GetLength(1); column++)
+        {
+            array[row,column] = new Random().Next(1, 10);
+            Square[row,row]=1;
+            Square[row,(m-1-row)]=1;
+            Console.Write(array[row, column] + " ");
+        }
+        Console.WriteLine(); // отступ на новую строку
+    }
+}
+Console.WriteLine();
+print(Square);
+
+
 
